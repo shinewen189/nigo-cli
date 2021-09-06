@@ -1,0 +1,31 @@
+{
+  "name": "nigo",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env envMode=dev webpack serve --config build/webpack.dev.config.js  --color",
+    "build": "cross-env envMode=prod webpack --config build/webpack.prod.config.js  --color"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.9",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "prettier": "^2.3.2",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "style-loader": "^3.2.1",
+    "vue-loader": "^16.5.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.9",
+    "vue-router": "^4.0.11"
+  }
+}
