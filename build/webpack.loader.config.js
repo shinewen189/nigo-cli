@@ -1,8 +1,15 @@
-module.exports = (prodMode) => {
+module.exports = prodMode => {
   return [
     {
+      test: /.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader'
+      }
+    },
+    {
       test: /\.less$/,
-      use: ['style-loader', 'css-loader', 'less-loader'] // 从右向左解析原则
+      use: ['style-loader', 'css-loader', 'less-loader']
     },
     {
       test: /\.vue$/,

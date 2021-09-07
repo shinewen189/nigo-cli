@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader/dist/index')
 const rules = require('./webpack.loader.config')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 const chalk = require('chalk')
 
@@ -16,7 +17,7 @@ for (const key in process.env) {
   }
 }
 
-module.exports = (proMode) => {
+module.exports = proMode => {
   return {
     stats: 'errors-only',
     entry: resolve(__dirname, '../src/main.js'),
@@ -51,7 +52,12 @@ module.exports = (proMode) => {
       new ProgressBarPlugin({
         format: `:msg [:bar] ${chalk.green.bold(':percent')} (:elapsed s)`
       }),
-      new VueLoaderPlugin()
+      new VueLoaderPlugin(),
+      new ESLintPlugin({
+        // fix: true,
+        extensions: ['js', 'json', 'vue'],
+        exclude: '/node_modules/'
+      })
     ]
   }
 }
