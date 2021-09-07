@@ -7,9 +7,7 @@
 <script>
 export default {
   name: 'home',
-  mounted() {
-    console.log('这是一个测试程序')
-  }
+  mounted() {}
 }
 </script>
 
