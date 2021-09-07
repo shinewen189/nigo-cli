@@ -1,14 +1,21 @@
 <template>
   <div>
+    <HelloWorld></HelloWorld>
     <div class="box2"></div>
     <div class="box">
       <span>这是一个测试程序！！ + {{ test }}</span>
+      <button>加加</button>
     </div>
   </div>
 </template>
 
 <script>
+import HelloWorld from '@/components/hello-world/hello-world.vue'
+
 export default {
+  components: {
+    HelloWorld
+  },
   name: 'home',
   data() {
     return {
