@@ -5,9 +5,7 @@
 <script>
 export default {
   name: 'home',
-  mounted() {
-    const a = 1
-  }
+  mounted() {}
 }
 </script>
 

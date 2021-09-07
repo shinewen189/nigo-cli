@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env envMode=dev webpack serve --config build/webpack.dev.config.js  --color",
-    "build": "cross-env envMode=prod webpack --config build/webpack.prod.config.js  --color"
+    "build": "cross-env envMode=prod webpack --config build/webpack.prod.config.js  --color",
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.vue src"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -26,6 +28,7 @@
     "eslint-plugin-vue": "^7.17.0",
     "eslint-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.0",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
     "prettier": "^2.3.2",
