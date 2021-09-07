@@ -10,7 +10,7 @@ module.exports = merge(webpackConfigBase(true), {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: './js/[name].[chunkhash].js',
-    publicPath: './nigo-cli',
+    publicPath: './',
     clean: true
   },
   cache: {
