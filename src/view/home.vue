@@ -1,11 +1,15 @@
 <template>
-  <div class="box"><span></span></div>
+  <div class="box">
+    <span>这是一个测试程序</span>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'home',
-  mounted() {}
+  mounted() {
+    console.log('这是一个测试程序')
+  }
 }
 </script>
 
@@ -17,6 +21,7 @@ export default {
   span {
     width: 100px;
     height: 100px;
+    color: #fff;
     background-color: red;
     display: inline-block;
   }
