@@ -1,11 +1,14 @@
 <template>
-  <div class="pagination">
-    <Pagination
-      :page-total="10000"
-      :page-num="7"
-      :page-size="8"
-      @currentCallBack="currentCallBack"
-    ></Pagination>
+  <div>
+    <h2 class="h2">测试组件</h2>
+    <div class="pagination">
+      <Pagination
+        :page-total="10000"
+        :page-num="7"
+        :page-size="8"
+        @currentCallBack="currentCallBack"
+      ></Pagination>
+    </div>
   </div>
 </template>
 
@@ -25,4 +28,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.h2 {
+  text-align: center;
+}
+</style>
