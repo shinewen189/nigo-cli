@@ -24,6 +24,7 @@ export default {
   },
   mounted() {
     this.test = this.getData(2, 3)
+    this.test = 1
   },
   methods: {
     getData(a, b) {

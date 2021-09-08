@@ -16,6 +16,7 @@
     "@vue/compiler-sfc": "^3.2.9",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "commitizen": "^4.2.4",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
     "dotenv": "^10.0.0",
