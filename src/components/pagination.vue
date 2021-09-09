@@ -103,7 +103,9 @@ export default {
       let min = newVal - Math.floor(this.pageNum / 2)
       if (min < 1) min = 1
       max = min + this.pageNum - 1
-      if (max > this.pageTotalNum) max = this.pageTotalNum
+      if (max > this.pageTotalNum) {
+        max = this.pageTotalNum
+      }
       for (let i = min; i <= max; i += 1) {
         temp.push(i)
       }

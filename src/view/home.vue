@@ -20,6 +20,7 @@ export default {
   components: {
     Pagination
   },
+  mounted() {},
   methods: {
     currentCallBack(index) {
       console.log(index)
