@@ -440,8 +440,6 @@ cnpm i prettier -D
 
 按下图设置，那么保存修改后的文件就会自动按照`.prettierrc`配置去格式化，爽得不要不要。
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c32f20866e7940bf8d4b2328865be615~tplv-k3u1fbpfcp-watermark.image)
-只要保存文件就会重新格式化
-![屏幕录制2021-09-07 下午2.34.12.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/91235f6a4b7147c99d15b47bd4eaef5d~tplv-k3u1fbpfcp-watermark.image)
 
 
 
